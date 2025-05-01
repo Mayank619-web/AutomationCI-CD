@@ -15,7 +15,25 @@
     <artifactId>commons-io</artifactId>
     <version>2.11.0</version>  <!-- Use latest version -->
 </dependency>
+<dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.9.0</version>
+        <scope>test</scope>
+    </dependency>
+<suite name="MyTestSuite">
+  <test name="TestNG Tests">
+    <classes>
+      <class name="testcases.ContactUsForm"/>
+      <class name="testcases.LoginUser"/>
+      <class name="testcases.LoginUserIncorrect"/>
+      <class name="testcases.LogoutUser/>
+    </classes>
+  </test>
+</suite>
 
+
+    
     <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-ooxml</artifactId>
